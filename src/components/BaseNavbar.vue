@@ -1,6 +1,6 @@
 <template>
   <div
-    class="bg-base-100 text-base-content sticky top-0 z-30 flex h-16 w-full justify-center bg-opacity-90 backdrop-blur transition-all duration-100 [transform:translate3d(0,0,0)]">
+    class="bg-base-100/80 text-base-content sticky top-0 z-30 flex h-16 w-full justify-center backdrop-blur-xl transition-all duration-100 [transform:translate3d(0,0,0)]">
     <div class="w-full navbar mx-auto max-w-5xl">
       <div class="flex-none sm:hidden">
         <label for="my-drawer-3" aria-label="open sidebar" class="btn btn-square btn-ghost">
