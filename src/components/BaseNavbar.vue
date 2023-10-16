@@ -11,18 +11,29 @@
         </label>
       </div>
       <div class="flex-1 px-2 mx-2">
-        <a class="btn btn-ghost normal-case text-xl">Zhi Zeng</a>
+        <router-link class="btn btn-ghost normal-case text-xl" to="/portfolio/">Zhi Zeng</router-link>
       </div>
       <div class="flex-none hidden sm:block">
         <ul class="menu menu-horizontal">
-          <!-- Navbar menu content here -->
-          <li><a>Projects</a></li>
-          <li><a>About Me</a></li>
-          <li><a>Contact</a></li>
-          <li><a>Photography</a></li>
-          <li><a>More</a></li>
+          <li>
+            <router-link to="/portfolio/projects">Projects</router-link>
+          </li>
+          <li>
+            <router-link to="/portfolio/about">About Me</router-link>
+          </li>
+          <li>
+            <router-link to="/portfolio/contact">Contact</router-link>
+          </li>
+          <li>
+            <router-link to="/portfolio/photography">Photography</router-link>
+          </li>
+          <li>
+            <router-link to="/portfolio/more">More</router-link>
+          </li>
         </ul>
       </div>
     </div>
   </div>
 </template>
+<script setup>
+</script>
