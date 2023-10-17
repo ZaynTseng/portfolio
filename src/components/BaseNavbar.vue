@@ -15,25 +15,30 @@
       </div>
       <div class="flex-none hidden sm:block">
         <ul class="menu menu-horizontal">
-          <li>
-            <router-link to="/portfolio/projects">Projects</router-link>
-          </li>
-          <li>
-            <router-link to="/portfolio/about">About Me</router-link>
-          </li>
-          <li>
-            <router-link to="/portfolio/contact">Contact</router-link>
-          </li>
-          <li>
-            <router-link to="/portfolio/photography">Photography</router-link>
-          </li>
-          <li>
-            <router-link to="/portfolio/more">More</router-link>
+          <li v-for="(item, key) in menuItems" :key="key">
+            <router-link :to="{ path: item.path }" :class="{ 'bg-base-300': currentRoute === item.path }">
+              {{ item.name }}
+            </router-link>
           </li>
         </ul>
       </div>
     </div>
   </div>
 </template>
+
 <script setup>
+import {computed} from "vue";
+import {useRoute} from "vue-router";
+
+const route = useRoute();
+
+const currentRoute = computed(() => route.path);
+
+const menuItems = [
+  {name: "Projects", path: "/portfolio/projects"},
+  {name: "About Me", path: "/portfolio/about"},
+  {name: "Contact", path: "/portfolio/contact"},
+  {name: "Photography", path: "/portfolio/photography"},
+  {name: "More", path: "/portfolio/more"},
+];
 </script>

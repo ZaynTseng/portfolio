@@ -2,7 +2,7 @@
   <div class="bg-neutral text-neutral-content">
     <footer class="footer p-10 mx-auto max-w-5xl">
       <nav>
-        <header class="footer-title">Zhi Zeng</header>
+        <router-link to="/portfolio/" class="footer-title">Zhi Zeng</router-link>
         <router-link to="/portfolio/projects" class="link link-hover">Projects</router-link>
         <router-link to="/portfolio/about" class="link link-hover">About Me</router-link>
         <router-link to="/portfolio/contact" class="link link-hover">Contact</router-link>
