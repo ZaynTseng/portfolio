@@ -1,13 +1,14 @@
 <template>
   <div>
-    <base-hero :title="title" :content="content"></base-hero>
+    <base-hero>
+      <h1 class="text-5xl font-bold">{{ title }}</h1>
+      <p class="py-6">{{ content }}</p>
+    </base-hero>
   </div>
 </template>
 
 <script setup>
 import BaseHero from "@/components/BaseHero.vue";
-
-import {ref} from "vue";
 
 const title = "Projects";
 const content = "Welcome to my projects page!";

@@ -1,6 +1,8 @@
 <template>
   <div>
-    <base-hero :title="title" :content="content">
+    <base-hero>
+      <h1 class="text-5xl font-bold">{{ title }}</h1>
+      <p class="py-6">{{ content }}</p>
       <button class="btn btn-primary" @click="backToLandingPage">Back</button>
     </base-hero>
   </div>
@@ -9,7 +11,6 @@
 <script setup>
 import BaseHero from "@/components/BaseHero.vue";
 
-import {ref} from "vue";
 import {useRouter} from "vue-router";
 
 const router = useRouter();

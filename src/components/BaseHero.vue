@@ -2,19 +2,8 @@
   <div class="hero min-h-screen bg-base-200">
     <div class="hero-content text-center">
       <div class="max-w-md">
-        <h1 class="text-5xl font-bold">{{ title }}</h1>
-        <p class="py-6">{{ content }}</p>
         <slot></slot>
       </div>
     </div>
   </div>
 </template>
-
-<script>
-export default {
-  props: {
-    title: String,
-    content: String,
-  }
-};
-</script>
