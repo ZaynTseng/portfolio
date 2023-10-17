@@ -4,7 +4,6 @@ import {createApp} from "vue";
 import router from "@/router";
 import App from "./App.vue";
 
-import BaseBreadcrumb from "@/components/BaseBreadcrumb.vue";
 import BaseCardWithButton from "@/components/BaseCardWithButton.vue";
 import BaseFooter from "@/components/BaseFooter.vue";
 import BaseHero from "@/components/BaseHero.vue";
@@ -18,7 +17,6 @@ const app = createApp(App);
 
 app.use(router);
 
-app.component("base-breadcrumb", BaseBreadcrumb);
 app.component("base-card-with-button", BaseCardWithButton);
 app.component("base-footer", BaseFooter);
 app.component("base-hero", BaseHero);
