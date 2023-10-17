@@ -3,11 +3,11 @@
     <footer class="footer p-10 mx-auto max-w-5xl">
       <nav>
         <header class="footer-title">Zhi Zeng</header>
-        <a class="link link-hover">Projects</a>
-        <a class="link link-hover">About Me</a>
-        <a class="link link-hover">Contact</a>
-        <a class="link link-hover">Photography</a>
-        <a class="link link-hover">More</a>
+        <router-link to="/portfolio/projects" class="link link-hover">Projects</router-link>
+        <router-link to="/portfolio/about" class="link link-hover">About Me</router-link>
+        <router-link to="/portfolio/contact" class="link link-hover">Contact</router-link>
+        <router-link to="/portfolio/photography" class="link link-hover">Photography</router-link>
+        <router-link to="/portfolio/more" class="link link-hover">More</router-link>
       </nav>
     </footer>
     <footer
