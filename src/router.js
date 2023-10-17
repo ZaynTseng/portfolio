@@ -20,4 +20,9 @@ const router = createRouter({
     ]
 });
 
+router.beforeEach((to, from, next) => {
+    window.scrollTo(0, 0); // This will scroll the page to the top on route change
+    next();
+});
+
 export default router;
