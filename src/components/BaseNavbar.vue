@@ -16,7 +16,8 @@
       <div class="flex-none hidden sm:block">
         <ul class="menu menu-horizontal">
           <li v-for="(item, key) in menuItems" :key="key">
-            <router-link :to="{ path: item.path }">
+            <router-link :to="{ path: item.path }"
+                         :class="{ 'btn-active': currentRoute === item.path }">
               {{ item.name }}
             </router-link>
           </li>
