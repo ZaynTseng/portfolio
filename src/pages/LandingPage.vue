@@ -15,7 +15,7 @@
         <p class="text-5xl my-8">Graduated from the University of Melbourne in 2022, I acquired great training and
           exposure in UI/UX, machine learning, and product design.</p>
         <p class="text-5xl my-8">As I embark on my journey in frontend development, I am eager to apply my knowledge and
-          skills and create impactful works.</p>
+          skills to create impactful works.</p>
         <div class="text-4xl inline-flex items-end text-blue-500">
           <router-link to="/portfolio/projects" class="link link-hover">My Projects</router-link>
           <svg xmlns="http://www.w3.org/2000/svg" class="w-8 h-8" viewBox="0 0 512 512">
