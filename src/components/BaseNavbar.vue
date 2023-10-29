@@ -2,7 +2,7 @@
   <div
     class="bg-base-100/80 text-base-content sticky top-0 z-30 flex h-16 w-full justify-center backdrop-blur-xl transition-all duration-100 [transform:translate3d(0,0,0)]">
     <div class="w-full navbar mx-auto max-w-5xl">
-      <div class="flex-none sm:hidden">
+      <div class="flex-none md:hidden">
         <label for="my-drawer-3" aria-label="open sidebar" class="btn btn-square btn-ghost">
           <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24"
                class="inline-block w-6 h-6 stroke-current">
@@ -13,7 +13,7 @@
       <div class="flex-1 px-2 mx-2">
         <router-link class="btn btn-ghost normal-case text-xl" to="/portfolio/">Zhi Zeng</router-link>
       </div>
-      <div class="flex-none hidden sm:block">
+      <div class="flex-none hidden md:block">
         <ul class="menu menu-horizontal">
           <li v-for="(item, key) in menuItems" :key="key">
             <router-link :to="{ path: item.path }"

@@ -11,5 +11,5 @@
 import BaseHero from "@/components/BaseHero.vue";
 
 const title = "Photography";
-const content = "Welcome to my photography page!";
+const content = "[Work in Progress]";
 </script>

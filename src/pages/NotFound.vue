@@ -2,8 +2,9 @@
   <div>
     <base-hero>
       <h1 class="text-5xl font-bold">{{ title }}</h1>
-      <p class="py-6">{{ content }}</p>
-      <button class="btn btn-primary" @click="backToLandingPage">Back</button>
+      <div class="py-6">
+        <button class="btn btn-neutral" @click="backToLandingPage">Back to Home</button>
+      </div>
     </base-hero>
   </div>
 </template>
@@ -16,7 +17,6 @@ import {useRouter} from "vue-router";
 const router = useRouter();
 
 const title = "Sorry, this page doesn't exist";
-const content = "Go back to the main page.";
 
 function backToLandingPage() {
   router.replace("/portfolio/");

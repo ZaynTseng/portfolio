@@ -11,5 +11,5 @@
 import BaseHero from "@/components/BaseHero.vue";
 
 const title = "More";
-const content = "Welcome to my more page!";
+const content = "[Work in Progress]";
 </script>
