@@ -10,6 +10,7 @@
       <div class="gap-2 flex pb-6">
         <span class="badge badge-secondary badge-info">UI/UX</span>
         <span class="badge badge-secondary badge-success">iOS</span>
+        <span class="badge badge-ghost">November 2022</span>
       </div>
       <h2 class="text-3xl font-bold pt-4">Challenge</h2>
       <p>This UX research project, in partnership with Telstra, focuses on exploring how digital twins can benefit the
