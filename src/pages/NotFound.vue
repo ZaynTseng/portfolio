@@ -1,6 +1,6 @@
 <template>
   <div>
-    <base-hero>
+    <base-hero class="text-center">
       <h1 class="text-5xl font-bold">{{ title }}</h1>
       <div class="py-6">
         <button class="btn btn-neutral" @click="backToLandingPage">Back to Home</button>

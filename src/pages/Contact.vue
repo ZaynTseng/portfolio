@@ -1,6 +1,6 @@
 <template>
   <div>
-    <base-hero>
+    <base-hero class="text-center">
       <h1 class="text-5xl font-bold">{{ title }}</h1>
       <p class="py-6">{{ content }}</p>
     </base-hero>
