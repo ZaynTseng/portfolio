@@ -1,9 +1,10 @@
 <template>
-  <base-hero @load="resourceLoaded">
+  <base-hero>
     <div class="grid grid-cols-1 gap-x-6 gap-y-12 md:grid-cols-2 ">
 
       <router-link to="/portfolio/projects/plant-mate"
-                   class="card hover:bg-base-200 transition-all duration-200 hover:-translate-y-1 text-left  bg-base-100 shadow-lg">
+                   class="card hover:bg-base-200 transition-all duration-200 hover:-translate-y-1 text-left  bg-base-100 shadow-lg"
+                   @load="resourceLoaded">
         <figure>
           <base-spinner v-if="isLoading"></base-spinner>
           <img src="../assets/projects/plant-mate/plant-mate-cover.png" alt="Plant Mate"/>

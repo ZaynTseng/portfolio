@@ -1,9 +1,13 @@
 <template>
+  <base-hero v-if="isLoading">
+    <base-spinner></base-spinner>
+  </base-hero>
   <base-hero class="animate__animated animate__fadeIn">
     <div class="max-w-3xl gap-2 grid">
       <figure>
         <img src="../../assets/projects/recipe-scale/recipe-scale-cover.png" alt="cover"
-             class="border-base-content bg-base-300 rounded-box border border-opacity-5">
+             class="border-base-content bg-base-300 rounded-box border border-opacity-5"
+             @load="resourceLoaded">
       </figure>
       <h1 class="text-5xl font-bold pt-4">RecipeScale</h1>
       <p class="text-2xl">Store, share, and learn recipes with ease</p>
@@ -92,6 +96,15 @@
     </div>
   </base-hero>
 </template>
+
 <script setup>
 import BaseHero from "@/components/BaseHero.vue";
+import {ref} from "vue";
+import BaseSpinner from "@/components/BaseSpinner.vue";
+
+let isLoading = ref(true);
+
+function resourceLoaded() {
+  isLoading.value = false;
+}
 </script>
