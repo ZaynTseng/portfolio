@@ -10,6 +10,7 @@
     "deploy": "npm run build && gh-pages -d dist"
   },
   "dependencies": {
+    "@hsorby/vue3-katex": "^0.6.0-rc.6",
     "vue": "^3.3.4",
     "vue-router": "^4.2.5"
   },
