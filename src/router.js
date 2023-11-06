@@ -10,6 +10,7 @@ import More from "@/pages/More.vue";
 
 const ProjectPlantMate = () => import("@/pages/projects/ProjectPlantMate.vue");
 const ProjectRecipeScale = () => import("@/pages/projects/ProjectRecipeScale.vue");
+const ProjectStereoDisparity = () => import("@/pages/projects/ProjectStereoDisparity.vue");
 
 const router = createRouter({
     history: createWebHistory(),
@@ -19,6 +20,7 @@ const router = createRouter({
         {path: "/portfolio/projects", component: Projects},
         {path: "/portfolio/projects/plant-mate", component: ProjectPlantMate},
         {path: "/portfolio/projects/recipe-scale", component: ProjectRecipeScale},
+        {path: "/portfolio/projects/stereo-disparity", component: ProjectStereoDisparity},
         {path: "/portfolio/about", component: AboutMe},
         {path: "/portfolio/contact", component: Contact},
         {path: "/portfolio/photography", component: Photography},
