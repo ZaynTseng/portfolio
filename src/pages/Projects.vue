@@ -1,5 +1,5 @@
 <template>
-  <base-hero @load="resourceLoaded" class="animate__animated animate__fadeIn">
+  <base-hero @load="resourceLoaded">
     <div class="grid grid-cols-1 gap-x-6 gap-y-12 md:grid-cols-2 ">
 
       <router-link to="/portfolio/projects/plant-mate"
