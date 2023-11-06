@@ -86,7 +86,7 @@
         every heated discussion, clash of ideas, and exploration of new knowledge.</p>
 
       <h2 class="text-3xl font-bold pt-4">Project Video</h2>
-      <p><a class="link link-hover" target="_blank"
+      <p><a class="link link-hover text-blue-500" target="_blank"
             href="https://www.youtube.com/watch?v=QneEN4ZIQSI">
         Watch the Project Video on YouTube ↗</a></p>
 

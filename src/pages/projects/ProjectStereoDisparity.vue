@@ -23,7 +23,7 @@
         given stereo image pairs, different stereo matching algorithms will be compared and the possible optimizations
         from different aspects will be discussed.</p>
       <p>The dataset in this experiment is curated from <a
-        class="link link-hover" target="_blank" href="https://drivingstereo-dataset.github.io">here ↗</a>.
+        class="link link-hover text-blue-500" target="_blank" href="https://drivingstereo-dataset.github.io">here ↗</a>.
         Totally, there are 25
         sets of images, each set has a pair of stereo images taken from a moving vehicle and one ground truth depth
         image. Thus, the disparity map we calculated should be compared with the true depth image to check

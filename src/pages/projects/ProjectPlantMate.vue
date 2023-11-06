@@ -157,7 +157,7 @@
         <li>Help people growing plants with ease.</li>
         <li>Easy to learn and easy to use.</li>
         <li>Minimal and simplicity design.</li>
-        <li>Follow the iOS <a class="link link-hover" target="_blank"
+        <li>Follow the iOS <a class="link link-hover text-blue-500" target="_blank"
                               href="https://developer.apple.com/design/human-interface-guidelines/guidelines/overview/">Human
           Interface
           Guidelines. ↗</a></li>
@@ -212,12 +212,12 @@
       </ul>
       <img src="../../assets/projects/plant-mate/colour.png" alt="colour palette">
 
-      <a class="link link-hover" target="_blank"
+      <a class="link link-hover text-blue-500" target="_blank"
          href="https://developer.apple.com/design/human-interface-guidelines/foundations/color/">Human Interface
         Guidelines:
         Colour ↗</a>
 
-      <a class="link link-hover" target="_blank"
+      <a class="link link-hover text-blue-500" target="_blank"
          href="https://developer.apple.com/design/human-interface-guidelines/foundations/typography/">Human Interface
         Guidelines:
         Typography ↗</a>
@@ -289,11 +289,11 @@
       </ul>
 
       <h2 class="text-3xl font-bold pt-4">Interactive Prototype and Project Video</h2>
-      <p><a class="link link-hover" target="_blank"
+      <p><a class="link link-hover text-blue-500" target="_blank"
             href="https://www.figma.com/proto/1mv7Tm4cWvwqrhUxkkHNon/Plant-Mate-Project-File?page-id=0%3A1&node-id=1%3A137&viewport=164%2C46%2C0.16&scaling=scale-down&starting-point-node-id=1%3A137">
         Try the Interactive Demo in Figma ↗</a></p>
 
-      <p><a class="link link-hover" target="_blank"
+      <p><a class="link link-hover text-blue-500" target="_blank"
             href="https://www.youtube.com/watch?v=wbwp5E0z1dU">
         Watch the Project Video on YouTube ↗</a></p>
     </div>
