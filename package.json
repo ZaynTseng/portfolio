@@ -7,7 +7,7 @@
     "dev": "vite",
     "build": "vite build",
     "preview": "vite preview",
-    "deploy": "npm run build && gh-pages -d dist"
+    "deploy": "npm run build && cd dist && cp index.html 404.html && cd .. && gh-pages -d dist"
   },
   "dependencies": {
     "@hsorby/vue3-katex": "^0.6.0-rc.6",
