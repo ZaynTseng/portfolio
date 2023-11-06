@@ -1,11 +1,14 @@
 <template>
   <div>
-    <base-hero>
+    <base-hero @load="resourceLoaded">
       <div class="grid grid-cols-1 gap-x-6 gap-y-12 md:grid-cols-2 ">
 
         <router-link to="/portfolio/projects/plant-mate"
                      class="card hover:bg-base-200 transition-all duration-200 hover:-translate-y-1 text-left  bg-base-100 shadow-lg">
-          <figure><img src="../assets/projects/plant-mate/plant-mate-cover.png" alt="Plant Mate"/></figure>
+          <figure>
+            <base-spinner v-if="isLoading"></base-spinner>
+            <img src="../assets/projects/plant-mate/plant-mate-cover.png" alt="Plant Mate"/>
+          </figure>
           <div class="card-body">
             <h2 class="card-title">Plant Mate
               <span class="badge badge-info">UI/UX</span>
@@ -19,7 +22,10 @@
 
         <router-link to="/portfolio/projects/recipe-scale"
                      class="card hover:bg-base-200 transition-all duration-200 hover:-translate-y-1 text-left  bg-base-100 shadow-lg">
-          <figure><img src="../assets/projects/recipe-scale/recipe-scale-cover.png" alt="RecipeScale"/></figure>
+          <figure>
+            <base-spinner v-if="isLoading"></base-spinner>
+            <img src="../assets/projects/recipe-scale/recipe-scale-cover.png" alt="RecipeScale"/>
+          </figure>
           <div class="card-body">
             <h2 class="card-title">RecipeScale
               <span class="badge badge-info">UI/UX</span>
@@ -33,7 +39,9 @@
 
         <router-link to="/portfolio/projects/stereo-disparity"
                      class="card hover:bg-base-200 transition-all duration-200 hover:-translate-y-1 text-left  bg-base-100 shadow-lg">
-          <figure><img src="../assets/projects/stereo-disparity/stereo-disparity-cover.png" alt="Stereo Disparity"/>
+          <figure>
+            <base-spinner v-if="isLoading"></base-spinner>
+            <img src="../assets/projects/stereo-disparity/stereo-disparity-cover.png" alt="Stereo Disparity"/>
           </figure>
           <div class="card-body">
             <h2 class="card-title">Stereo Disparity
@@ -53,4 +61,11 @@
 
 <script setup>
 import BaseHero from "@/components/BaseHero.vue";
+import {ref} from "vue";
+
+let isLoading = ref(true);
+
+function resourceLoaded() {
+  isLoading.value = false;
+}
 </script>
