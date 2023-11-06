@@ -1,5 +1,6 @@
 import "./style.css";
 import "katex/dist/katex.min.css";
+import "animate.css";
 
 import {createApp} from "vue";
 import router from "@/router";
