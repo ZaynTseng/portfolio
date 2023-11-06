@@ -10,6 +10,7 @@ import BaseFooter from "@/components/BaseFooter.vue";
 import BaseHero from "@/components/BaseHero.vue";
 import BaseNavbar from "@/components/BaseNavbar.vue";
 import BaseSidebar from "@/components/BaseSidebar.vue";
+import BaseSpinner from "@/components/BaseSpinner.vue";
 
 const app = createApp(App);
 
@@ -24,5 +25,6 @@ app.component("base-footer", BaseFooter);
 app.component("base-hero", BaseHero);
 app.component("base-navbar", BaseNavbar);
 app.component("base-sidebar", BaseSidebar);
+app.component("base-spinner", BaseSpinner);
 
 app.mount("#app");
