@@ -1,62 +1,60 @@
 <template>
-  <div>
-    <base-hero @load="resourceLoaded">
-      <div class="grid grid-cols-1 gap-x-6 gap-y-12 md:grid-cols-2 ">
+  <base-hero @load="resourceLoaded" class="animate__animated animate__fadeIn">
+    <div class="grid grid-cols-1 gap-x-6 gap-y-12 md:grid-cols-2 ">
 
-        <router-link to="/portfolio/projects/plant-mate"
-                     class="card hover:bg-base-200 transition-all duration-200 hover:-translate-y-1 text-left  bg-base-100 shadow-lg">
-          <figure>
-            <base-spinner v-if="isLoading"></base-spinner>
-            <img src="../assets/projects/plant-mate/plant-mate-cover.png" alt="Plant Mate"/>
-          </figure>
-          <div class="card-body">
-            <h2 class="card-title">Plant Mate
-              <span class="badge badge-info">UI/UX</span>
-              <span class="badge badge-success">iOS</span>
-            </h2>
-            <p>A digital twin app crafted for novice urban farmers</p>
-            <div class="card-actions justify-end">
-            </div>
+      <router-link to="/portfolio/projects/plant-mate"
+                   class="card hover:bg-base-200 transition-all duration-200 hover:-translate-y-1 text-left  bg-base-100 shadow-lg">
+        <figure>
+          <base-spinner v-if="isLoading"></base-spinner>
+          <img src="../assets/projects/plant-mate/plant-mate-cover.png" alt="Plant Mate"/>
+        </figure>
+        <div class="card-body">
+          <h2 class="card-title">Plant Mate
+            <span class="badge badge-info">UI/UX</span>
+            <span class="badge badge-success">iOS</span>
+          </h2>
+          <p>A digital twin app crafted for novice urban farmers</p>
+          <div class="card-actions justify-end">
           </div>
-        </router-link>
+        </div>
+      </router-link>
 
-        <router-link to="/portfolio/projects/recipe-scale"
-                     class="card hover:bg-base-200 transition-all duration-200 hover:-translate-y-1 text-left  bg-base-100 shadow-lg">
-          <figure>
-            <base-spinner v-if="isLoading"></base-spinner>
-            <img src="../assets/projects/recipe-scale/recipe-scale-cover.png" alt="RecipeScale"/>
-          </figure>
-          <div class="card-body">
-            <h2 class="card-title">RecipeScale
-              <span class="badge badge-info">UI/UX</span>
-              <span class="badge badge-warning">Hardware</span>
-            </h2>
-            <p>Store, share, and learn recipes with ease</p>
-            <div class="card-actions justify-end">
-            </div>
+      <router-link to="/portfolio/projects/recipe-scale"
+                   class="card hover:bg-base-200 transition-all duration-200 hover:-translate-y-1 text-left  bg-base-100 shadow-lg">
+        <figure>
+          <base-spinner v-if="isLoading"></base-spinner>
+          <img src="../assets/projects/recipe-scale/recipe-scale-cover.png" alt="RecipeScale"/>
+        </figure>
+        <div class="card-body">
+          <h2 class="card-title">RecipeScale
+            <span class="badge badge-info">UI/UX</span>
+            <span class="badge badge-warning">Hardware</span>
+          </h2>
+          <p>Store, share, and learn recipes with ease</p>
+          <div class="card-actions justify-end">
           </div>
-        </router-link>
+        </div>
+      </router-link>
 
-        <router-link to="/portfolio/projects/stereo-disparity"
-                     class="card hover:bg-base-200 transition-all duration-200 hover:-translate-y-1 text-left  bg-base-100 shadow-lg">
-          <figure>
-            <base-spinner v-if="isLoading"></base-spinner>
-            <img src="../assets/projects/stereo-disparity/stereo-disparity-cover.png" alt="Stereo Disparity"/>
-          </figure>
-          <div class="card-body">
-            <h2 class="card-title">Stereo Disparity
-              <span class="badge badge-primary">Algorithms</span>
-              <span class="badge badge-secondary">CV</span>
-            </h2>
-            <p>Stereo disparity algorithm experiments and evaluation</p>
-            <div class="card-actions justify-end">
-            </div>
+      <router-link to="/portfolio/projects/stereo-disparity"
+                   class="card hover:bg-base-200 transition-all duration-200 hover:-translate-y-1 text-left  bg-base-100 shadow-lg">
+        <figure>
+          <base-spinner v-if="isLoading"></base-spinner>
+          <img src="../assets/projects/stereo-disparity/stereo-disparity-cover.png" alt="Stereo Disparity"/>
+        </figure>
+        <div class="card-body">
+          <h2 class="card-title">Stereo Disparity
+            <span class="badge badge-primary">Algorithms</span>
+            <span class="badge badge-secondary">CV</span>
+          </h2>
+          <p>Stereo disparity algorithm experiments and evaluation</p>
+          <div class="card-actions justify-end">
           </div>
-        </router-link>
+        </div>
+      </router-link>
 
-      </div>
-    </base-hero>
-  </div>
+    </div>
+  </base-hero>
 </template>
 
 <script setup>

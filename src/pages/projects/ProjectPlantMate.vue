@@ -1,5 +1,5 @@
 <template>
-  <base-hero>
+  <base-hero class="animate__animated animate__fadeIn">
     <div class="max-w-3xl gap-2 grid">
       <figure>
         <img src="../../assets/projects/plant-mate/plant-mate-cover.png" alt="cover"
