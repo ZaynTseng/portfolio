@@ -38,7 +38,7 @@
           <div class="card-body">
             <h2 class="card-title">Stereo Disparity
               <span class="badge badge-primary">Algorithms</span>
-              <span class="badge badge-secondary">Computer Vision</span>
+              <span class="badge badge-secondary">CV</span>
             </h2>
             <p>Stereo disparity algorithm experiments and evaluation</p>
             <div class="card-actions justify-end">
