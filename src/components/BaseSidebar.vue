@@ -1,7 +1,7 @@
 <template>
   <div class="drawer-side z-40">
     <label for="my-drawer-3" aria-label="close sidebar" class="drawer-overlay"></label>
-    <ul class="menu p-4 w-80 min-h-full bg-base-100/70 backdrop-blur-xl">
+    <ul class="menu p-4 w-80 min-h-full bg-base-100/80 backdrop-blur-xl">
       <li>
         <p @click="itemClicked">
           <svg xmlns="http://www.w3.org/2000/svg" class="h-6 w-6" fill="none" viewBox="0 0 24 24" stroke="currentColor">
