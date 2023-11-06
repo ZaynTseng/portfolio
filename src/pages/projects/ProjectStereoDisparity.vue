@@ -18,7 +18,10 @@
         pre-processing steps have been proposed in this field. In this paper, to calculate the disparity maps of the
         given stereo image pairs, different stereo matching algorithms will be compared and the possible optimizations
         from different aspects will be discussed.</p>
-      <p>The dataset in this experiment is curated from https://drivingstereo-dataset.github.io. Totally, there are 25
+      <p>The dataset in this experiment is curated from <a
+        class="link link-hover" target="_blank" href="https://drivingstereo-dataset.github.io">this link
+        ↗</a>.
+        Totally, there are 25
         sets of images, each set has a pair of stereo images taken from a moving vehicle and one ground truth depth
         image. Thus, the disparity map we calculated should be compared with the true depth image to check
         correctness.</p>
@@ -725,8 +728,7 @@
           </tr>
           <tr>
             <td rowspan="2">
-              <p>ZN</p>
-              <p>CC</p>
+              <p>ZNCC</p>
             </td>
             <td>
               <p>Base</p>
@@ -862,8 +864,7 @@
               <p>SSD</p>
             </td>
             <td>
-              <p>SDD</p>
-              <p>kernel</p>
+              <p>SDD kernel</p>
             </td>
             <td>
               <p>SDD SepFillter</p>
@@ -872,8 +873,7 @@
               <p>NCC</p>
             </td>
             <td>
-              <p>NCC</p>
-              <p>Kennel</p>
+              <p>NCC Kennel</p>
             </td>
             <td>
               <p>NCC SepFillter</p>
@@ -883,8 +883,7 @@
           <tbody>
           <tr>
             <td>
-              <p>Time</p>
-              <p>(1 img)</p>
+              <p>Time (1 img)</p>
             </td>
             <td>
               <p>&nbsp;95s</p>
