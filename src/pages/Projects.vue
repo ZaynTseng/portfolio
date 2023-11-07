@@ -17,7 +17,7 @@
 
     <router-link to="/portfolio/projects/recipe-scale"
                  class="flex items-center justify-between w-full min-h-[50vh] max-h-[80vh] bg-[#EAE3DC] overflow-hidden">
-      <div class="flex flex-col ml-12 md:ml-20 lg:ml-28 mr-8 gap-y-1 md:gap-y-1.5 lg:gap-y-2">
+      <div class="flex flex-col ml-8 md:ml-20 lg:ml-28 mr-8 gap-y-1 md:gap-y-1.5 lg:gap-y-2">
         <h1 class="text-4xl md:text-5xl lg:text-6xl font-medium">RecipeScale</h1>
         <p class="text-xl md:text-2xl lg:text-3xl font-light">Store, share, and learn recipes with&nbsp;ease</p>
         <div class="text-md md:text-lg lg:text-xl flex text-blue-500 gap-1">
