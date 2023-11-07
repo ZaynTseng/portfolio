@@ -7,10 +7,9 @@ import AboutMe from "@/pages/AboutMe.vue";
 import Contact from "@/pages/Contact.vue";
 import Photography from "@/pages/Photography.vue";
 import More from "@/pages/More.vue";
-
-const ProjectPlantMate = () => import("@/pages/projects/ProjectPlantMate.vue");
-const ProjectRecipeScale = () => import("@/pages/projects/ProjectRecipeScale.vue");
-const ProjectStereoDisparity = () => import("@/pages/projects/ProjectStereoDisparity.vue");
+import ProjectPlantMate from "@/pages/projects/ProjectPlantMate.vue";
+import ProjectRecipeScale from "@/pages/projects/ProjectRecipeScale.vue";
+import ProjectStereoDisparity from "@/pages/projects/ProjectStereoDisparity.vue";
 
 const router = createRouter({
     history: createWebHistory(),
