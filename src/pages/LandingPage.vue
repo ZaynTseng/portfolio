@@ -16,12 +16,9 @@
           UI/UX, software development, machine learning, and product design.</p>
         <p class="my-8">Embarking on the journey of frontend development, I am eager to apply my knowledge and skills to
           create impactful works.</p>
-        <div class="md:text-4xl sm:text-3xl text-2xl mb-40 inline-flex items-end text-blue-500">
+        <div class="text-2xl sm:text-3xl md:text-4xl mb-40 flex text-blue-500 gap-1">
           <router-link to="/portfolio/projects" class="link link-hover">My Projects</router-link>
-          <svg xmlns="http://www.w3.org/2000/svg" class="w-8 h-8" viewBox="0 0 512 512">
-            <path fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="48"
-                  d="M184 112l144 144-144 144"/>
-          </svg>
+          <p>→</p>
         </div>
       </div>
     </div>

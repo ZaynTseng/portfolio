@@ -1,61 +1,51 @@
 <template>
-  <base-hero>
-    <div class="grid grid-cols-1 gap-x-6 gap-y-12 md:grid-cols-2 ">
-
-      <router-link to="/portfolio/projects/plant-mate"
-                   class="card hover:bg-base-200 transition-all duration-200 hover:-translate-y-1 text-left  bg-base-100 shadow-lg"
-                   @load="resourceLoaded">
-        <figure>
-          <base-spinner v-if="isLoading"></base-spinner>
-          <img src="../assets/projects/plant-mate/plant-mate-cover.png" alt="Plant Mate"/>
-        </figure>
-        <div class="card-body">
-          <h2 class="card-title">Plant Mate
-            <span class="badge badge-info">UI/UX</span>
-            <span class="badge badge-success">iOS</span>
-          </h2>
-          <p>A digital twin app crafted for novice urban farmers</p>
-          <div class="card-actions justify-end">
-          </div>
+  <div class="flex flex-col gap-3">
+    <router-link to="/portfolio/projects/plant-mate"
+                 class="flex flex-col items-center justify-between w-full min-h-[50vh] max-h-[80vh] bg-base-200 overflow-hidden">
+      <div class="flex flex-col mt-16 mb-4 items-center gap-y-1 md:gap-y-1.5 lg:gap-y-2">
+        <h1 class="text-4xl md:text-5xl lg:text-6xl font-medium">Plant Mate</h1>
+        <p class="text-xl md:text-2xl lg:text-3xl font-light">A digital twin app crafted for novice urban farmers</p>
+        <div class="text-md md:text-lg lg:text-xl flex text-blue-500 gap-1">
+          <p class="link link-hover">Read</p>
+          <p>→</p>
         </div>
-      </router-link>
+      </div>
+      <base-spinner v-if="isLoading"></base-spinner>
+      <img class="w-11/12" src="../assets/projects/plant-mate/plant-mate-cover-2.png"
+           alt="Plant Mate" @load="resourceLoaded"/>
+    </router-link>
 
-      <router-link to="/portfolio/projects/recipe-scale"
-                   class="card hover:bg-base-200 transition-all duration-200 hover:-translate-y-1 text-left  bg-base-100 shadow-lg">
-        <figure>
-          <base-spinner v-if="isLoading"></base-spinner>
-          <img src="../assets/projects/recipe-scale/recipe-scale-cover.png" alt="RecipeScale"/>
-        </figure>
-        <div class="card-body">
-          <h2 class="card-title">RecipeScale
-            <span class="badge badge-info">UI/UX</span>
-            <span class="badge badge-warning">Hardware</span>
-          </h2>
-          <p>Store, share, and learn recipes with ease</p>
-          <div class="card-actions justify-end">
-          </div>
+    <router-link to="/portfolio/projects/recipe-scale"
+                 class="flex items-center justify-between w-full min-h-[50vh] max-h-[80vh] bg-[#EAE3DC] overflow-hidden">
+      <div class="flex flex-col ml-16 mr-8 gap-y-1 md:gap-y-1.5 lg:gap-y-2">
+        <h1 class="text-4xl md:text-5xl lg:text-6xl font-medium">RecipeScale</h1>
+        <p class="text-xl md:text-2xl lg:text-3xl font-light">Store, share, and learn <br>recipes with ease</p>
+        <div class="text-md md:text-lg lg:text-xl flex text-blue-500 gap-1">
+          <p class="link link-hover">Read</p>
+          <p>→</p>
         </div>
-      </router-link>
+      </div>
+      <base-spinner v-if="isLoading"></base-spinner>
+      <img class="w-1/2" src="../assets/projects/recipe-scale/recipe-scale-cover-2.png"
+           alt="RecipeScale" @load="resourceLoaded"/>
+    </router-link>
 
-      <router-link to="/portfolio/projects/stereo-disparity"
-                   class="card hover:bg-base-200 transition-all duration-200 hover:-translate-y-1 text-left  bg-base-100 shadow-lg">
-        <figure>
-          <base-spinner v-if="isLoading"></base-spinner>
-          <img src="../assets/projects/stereo-disparity/stereo-disparity-cover.png" alt="Stereo Disparity"/>
-        </figure>
-        <div class="card-body">
-          <h2 class="card-title">Stereo Disparity
-            <span class="badge badge-primary">Algorithms</span>
-            <span class="badge badge-secondary">CV</span>
-          </h2>
-          <p>Stereo disparity algorithm experiments and evaluation</p>
-          <div class="card-actions justify-end">
-          </div>
+    <router-link to="/portfolio/projects/stereo-disparity"
+                 class="flex flex-col items-center justify-between w-full min-h-[50vh] max-h-[80vh] bg-base-200 overflow-hidden">
+      <div class="flex flex-col mt-16 mb-4 items-center gap-y-1 md:gap-y-1.5 lg:gap-y-2">
+        <h1 class="text-4xl md:text-5xl lg:text-6xl font-medium">Stereo Disparity</h1>
+        <p class="text-xl md:text-2xl lg:text-3xl font-light">Stereo disparity algorithm experiments and evaluation</p>
+        <div class="text-md md:text-lg lg:text-xl flex text-blue-500 gap-1">
+          <p class="link link-hover">Read</p>
+          <p>→</p>
         </div>
-      </router-link>
+      </div>
+      <base-spinner v-if="isLoading"></base-spinner>
+      <img class="w-5/6 drop-shadow-2xl" src="../assets/projects/stereo-disparity/stereo-disparity-cover-2.png"
+           alt="Stereo Disparity" @load="resourceLoaded"/>
+    </router-link>
 
-    </div>
-  </base-hero>
+  </div>
 </template>
 
 <script setup>

@@ -12,9 +12,18 @@
         <router-link to="/portfolio/more" class="link link-hover">More</router-link>
       </nav>
       <nav>
-        <a class="link link-hover" href="https://twitter.com/ZaynTseng" target="_blank">Twitter ↗</a>
-        <a class="link link-hover" href="https://github.com/ZaynTseng" target="_blank">Github ↗</a>
-        <a class="link link-hover" href="https://www.linkedin.com/in/zhizeng/" target="_blank">Linkedin ↗</a>
+        <div class="flex gap-1">
+          <a class="link link-hover" href="https://twitter.com/ZaynTseng" target="_blank">Twitter</a>
+          <p>↗</p>
+        </div>
+        <div class="flex gap-1">
+          <a class="link link-hover" href="https://github.com/ZaynTseng" target="_blank">Github</a>
+          <p>↗</p>
+        </div>
+        <div class="flex gap-1">
+          <a class="link link-hover" href="https://www.linkedin.com/in/zhizeng/" target="_blank">Linkedin</a>
+          <p>↗</p>
+        </div>
       </nav>
     </footer>
     <footer class="footer px-10 py-4 border-t border-gray-800 mx-auto max-w-5xl">
@@ -24,3 +33,5 @@
     </footer>
   </div>
 </template>
+<script setup>
+</script>
