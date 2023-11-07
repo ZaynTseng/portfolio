@@ -4,7 +4,7 @@
       class="flex flex-col justify-center min-h-[80vh] w-[80vw] py-20
       text-5xl sm:text-6xl md:text-7xl lg:text-8xl">
       <p>Zhi Zeng</p>
-      <p>Frontend&nbsp;Developer</p>
+      <p>Frontend Developer</p>
       <p>Melbourne, AU</p>
     </div>
     <div
