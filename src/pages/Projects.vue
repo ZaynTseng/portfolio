@@ -49,7 +49,6 @@
 </template>
 
 <script setup>
-import BaseHero from "@/components/BaseHero.vue";
 import {ref} from "vue";
 
 let isLoading = ref(true);
