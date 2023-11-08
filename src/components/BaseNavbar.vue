@@ -17,7 +17,7 @@
         <ul class="menu menu-horizontal">
           <li v-for="(item, key) in menuItems" :key="key">
             <router-link :to="{ path: item.path }"
-                         :class="{ 'bg-base-300/50': currentRoute === item.path }">
+                         :class="{ '': currentRoute === item.path }">
               {{ item.name }}
             </router-link>
           </li>
