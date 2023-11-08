@@ -11,7 +11,7 @@
       </figure>
       <h1 class="text-5xl font-bold pt-4">Plant Mate</h1>
       <p class="text-2xl">A digital twin app crafted for novice urban farmers</p>
-      <div class="gap-2 flex pb-6">
+      <div class="gap-2 flex flex-wrap pb-6">
         <span class="badge badge-secondary badge-info">UI/UX</span>
         <span class="badge badge-secondary badge-success">iOS</span>
         <span class="badge badge-ghost">November 2022</span>
