@@ -11,6 +11,9 @@
       </li>
       <li></li>
       <li>
+        <router-link to="/portfolio/" @click="itemClicked">Home</router-link>
+      </li>
+      <li>
         <router-link to="/portfolio/projects" @click="itemClicked">Projects</router-link>
       </li>
       <li>
