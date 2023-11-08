@@ -16,7 +16,7 @@
     </router-link>
 
     <router-link to="/portfolio/projects/recipe-scale"
-                 class="flex items-center justify-between w-full min-h-[50vh] max-h-[80vh] bg-[#EAE3DC] overflow-hidden">
+                 class="flex items-center justify-between w-full min-h-[50vh] max-h-[80vh] bg-base-200 overflow-hidden">
       <div class="flex flex-col ml-8 md:ml-20 lg:ml-28 mr-8 gap-y-1 md:gap-y-1.5 lg:gap-y-2">
         <h1 class="text-4xl md:text-5xl lg:text-6xl font-medium">RecipeScale</h1>
         <p class="text-xl md:text-2xl lg:text-3xl font-light">Store, share, and learn recipes with&nbsp;ease</p>
@@ -41,7 +41,7 @@
         </div>
       </div>
       <base-spinner v-if="isLoading"></base-spinner>
-      <img class="w-5/6 drop-shadow-2xl" src="../assets/projects/stereo-disparity/stereo-disparity-cover-2.png"
+      <img class="w-5/6" src="../assets/projects/stereo-disparity/stereo-disparity-cover-2.png"
            alt="Stereo Disparity" @load="resourceLoaded"/>
     </router-link>
 
