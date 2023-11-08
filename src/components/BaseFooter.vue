@@ -1,6 +1,6 @@
 <template>
   <div class="bg-neutral text-neutral-content">
-    <footer class="footer p-10 mx-auto max-w-5xl grid-flow-col">
+    <footer class="footer p-10 mx-auto max-w-5xl">
       <nav>
         <router-link to="/portfolio/" class="link link-hover">Home</router-link>
         <router-link to="/portfolio/projects" class="link link-hover">Projects</router-link>
