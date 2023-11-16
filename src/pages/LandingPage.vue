@@ -8,7 +8,7 @@
       <p>Melbourne, AU</p>
     </div>
     <div
-      class="flex flex-col justify-center min-h-[80vh] w-[80vw] py-20
+      class="flex flex-col justify-center min-h-[80vh] w-[80vw] pt-20 pb-40
       text-2xl sm:text-3xl md:text-4xl lg:text-5xl
       gap-4 sm:gap-5 md:gap-6 lg:gap-7">
       <p>Hi, I am Zhi Zeng, a frontend developer currently living in&nbsp;Melbourne.</p>
