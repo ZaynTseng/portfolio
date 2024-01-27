@@ -28,7 +28,7 @@
     </footer>
     <footer class="footer px-10 py-4 border-t border-gray-800 mx-auto max-w-5xl">
       <aside>
-        <p>© 2023 Zhi Zeng. All Rights Reserved.</p>
+        <p>© 2024 Zhi Zeng. All Rights Reserved.</p>
       </aside>
     </footer>
   </div>
