@@ -11,7 +11,7 @@
       class="flex flex-col justify-center min-h-[80vh] w-[80vw] pt-20 pb-40
       text-2xl sm:text-3xl md:text-4xl lg:text-5xl
       gap-4 sm:gap-5 md:gap-6 lg:gap-7">
-      <p>Hi, I am Zhi Zeng, a frontend developer currently living in&nbsp;Melbourne.</p>
+      <p>Hi, I am Zhi, a frontend developer currently living in&nbsp;Melbourne.</p>
       <p>Graduated from the University of Melbourne in 2022, I acquired great exposure and exercise in
         UI/UX, software development, machine learning, and product&nbsp;design.</p>
       <p>Embarking on the journey of frontend development, I am eager to apply my knowledge and skills to
