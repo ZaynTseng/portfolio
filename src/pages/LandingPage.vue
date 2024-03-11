@@ -31,20 +31,20 @@ export default {
   setup() {
     const roles = ref([
       "Frontend Developer",
-      "Software Developer",
+      "Software Engineer",
       "Machine Learning Specialist",
       "Business Analyst",
       "UI/UX Designer"]);
     const currentRoleIndex = ref(0);
-    const animateClass = ref("animate__flipInX");
+    const animateClass = ref("animate__fadeIn");
 
     const currentRole = computed(() => roles.value[currentRoleIndex.value]);
 
     const switchRole = () => {
-      animateClass.value = "animate__flipOutX";
+      animateClass.value = "animate__fadeOut";
       setTimeout(() => {
         currentRoleIndex.value = (currentRoleIndex.value + 1) % roles.value.length;
-        animateClass.value = "animate__flipInX";
+        animateClass.value = "animate__fadeIn";
       }, 500);
     };
 
