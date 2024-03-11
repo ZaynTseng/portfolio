@@ -1,7 +1,7 @@
 <template>
   <div class="flex flex-col items-center">
     <div
-      class="flex flex-col justify-center min-h-[80vh] w-[80vw] py-20
+      class="flex flex-col justify-center min-h-[70vh] w-[80vw] py-20
       text-5xl sm:text-6xl md:text-7xl lg:text-8xl">
       <p>Zhi Zeng</p>
       <p :class="['animate__animated', 'animate__fast', animateClass]">{{ currentRole }}</p>
