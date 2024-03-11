@@ -49,7 +49,7 @@ export default {
     };
 
     onMounted(() => {
-      setInterval(switchRole, 3500);
+      setInterval(switchRole, 3000);
     });
 
     return {
