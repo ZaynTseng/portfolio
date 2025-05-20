@@ -3,23 +3,56 @@ name: Deploy to GitHub Pages
 on:
   push:
     branches:
-      - main
+      - main # Or your default branch
+  workflow_dispatch: # Allows manual triggering
+
+# Set permissions for GITHUB_TOKEN
+permissions:
+  contents: read
+  pages: write # Required to deploy to GitHub Pages
+  id-token: write # Required for OIDC token if you ever use it
 
 jobs:
   build:
     runs-on: ubuntu-latest
-
     steps:
       - name: Checkout code
-        uses: actions/checkout@v3
+        uses: actions/checkout@v4 # Updated to v4
 
-      - name: Install dependencies and build
-        run: |
-          npm install
-          npm run build
-
-      - name: Deploy to GitHub Pages
-        uses: peaceiris/actions-gh-pages@v3
+      - name: Setup Node.js # Good practice to specify Node version
+        uses: actions/setup-node@v4
         with:
-          github_token: ${{ secrets.GITHUB_TOKEN }}
-          publish_dir: ./dist
+          node-version: "18" # Or your project's Node version
+          cache: "npm" # Optional: Caches npm dependencies
+
+      - name: Install dependencies
+        run: npm ci # Use 'ci' for cleaner installs in CI
+
+      - name: Build
+        run: npm run build # Assumes output is in ./dist
+
+      - name: Upload artifact
+        uses: actions/upload-pages-artifact@v3 # Or latest version
+        with:
+          # Upload entire repository
+          path: "./dist" # Your build output directory
+
+  deploy:
+    needs: build
+    runs-on: ubuntu-latest
+
+    # Grant GITHUB_TOKEN the permissions required to make a Pages deployment
+    permissions:
+      pages: write # to deploy to Pages
+      id-token: write # to verify OIDC token
+
+    # Add a deployment step enabling Jekyll to build Pages site
+    # and grab the environment URL
+    environment:
+      name: github-pages
+      url: ${{ steps.deployment.outputs.page_url }}
+
+    steps:
+      - name: Deploy to GitHub Pages
+        id: deployment
+        uses: actions/deploy-pages@v4 # Or latest version
