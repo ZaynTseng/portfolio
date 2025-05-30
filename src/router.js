@@ -1,4 +1,4 @@
-import { createRouter, createWebHistory } from "vue-router";
+import { createRouter, createWebHashHistory } from "vue-router";
 
 import NotFound from "@/pages/NotFound.vue";
 import LandingPage from "@/pages/LandingPage.vue";
@@ -13,9 +13,11 @@ import ProjectStereoDisparity from "@/pages/projects/ProjectStereoDisparity.vue"
 import ProjectKokosPosters from "@/pages/projects/ProjectKokosPosters.vue";
 
 const router = createRouter({
-  history: createWebHistory(),
+  history: createWebHashHistory(),
   routes: [
     { path: "/portfolio/", component: LandingPage },
+    { path: "/portfolio", component: LandingPage },
+    { path: "/", component: LandingPage },
     { path: "/:notFound(.*)", component: NotFound },
     { path: "/portfolio/projects", component: Projects },
     { path: "/portfolio/projects/plant-mate", component: ProjectPlantMate },
