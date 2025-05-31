@@ -35,8 +35,13 @@
           :key="src"
           :src="src"
           :alt="posterAlts[idx]"
-          class="cursor-zoom-in transition-transform duration-500 ease-[cubic-bezier(0.4,0,0.2,1)] hover:scale-105"
-          @click="openFull(idx)"
+          :class="[
+            'cursor-zoom-in transition-transform duration-500 ease-[cubic-bezier(0.4,0,0.2,1)]',
+            !isTouchDevice && !(showFull && hiddenIndex === idx)
+              ? 'hover:scale-105'
+              : '',
+          ]"
+          @click="(e) => openFull(idx, e)"
         />
       </div>
       <transition name="fade-zoom">
@@ -143,8 +148,18 @@ const posterAlts = [
 
 const showFull = ref(false);
 const fullIndex = ref(0);
+const hiddenIndex = ref(-1);
 
-function openFull(idx) {
+const isTouchDevice =
+  typeof window !== "undefined" &&
+  ("ontouchstart" in window ||
+    navigator.maxTouchPoints > 0 ||
+    navigator.msMaxTouchPoints > 0);
+
+function openFull(idx, e) {
+  if (isTouchDevice) {
+    e.preventDefault();
+  }
   fullIndex.value = idx;
   showFull.value = true;
   document.body.style.overflow = "hidden";
