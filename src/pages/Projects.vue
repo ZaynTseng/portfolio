@@ -2,7 +2,7 @@
   <div class="flex flex-col gap-3">
     <router-link
       to="/portfolio/projects/kokos-posters"
-      class="flex flex-col items-center justify-between w-full min-h-[50vh] max-h-[80vh] bg-base-200 overflow-hidden"
+      class="flex flex-col items-center justify-between w-full min-h-[40vh] max-h-[80vh] bg-base-200 overflow-hidden"
     >
       <div
         class="flex flex-col mt-16 mb-8 items-center gap-y-1 md:gap-y-1.5 lg:gap-y-2"
@@ -29,7 +29,7 @@
 
     <router-link
       to="/portfolio/projects/plant-mate"
-      class="flex flex-col items-center justify-between w-full min-h-[50vh] max-h-[80vh] bg-base-200 overflow-hidden"
+      class="flex flex-col items-center justify-between w-full min-h-[40vh] max-h-[80vh] bg-base-200 overflow-hidden"
     >
       <div
         class="flex flex-col mt-16 mb-4 items-center gap-y-1 md:gap-y-1.5 lg:gap-y-2"
@@ -54,7 +54,7 @@
 
     <router-link
       to="/portfolio/projects/recipe-scale"
-      class="flex items-center justify-between w-full min-h-[50vh] max-h-[80vh] bg-base-200 overflow-hidden"
+      class="flex items-center justify-between w-full min-h-[40vh] max-h-[80vh] bg-base-200 overflow-hidden"
     >
       <div
         class="flex flex-col ml-8 md:ml-20 lg:ml-28 mr-8 gap-y-1 md:gap-y-1.5 lg:gap-y-2"
@@ -81,7 +81,7 @@
 
     <router-link
       to="/portfolio/projects/stereo-disparity"
-      class="flex flex-col items-center justify-between w-full min-h-[50vh] max-h-[80vh] bg-base-200 overflow-hidden"
+      class="flex flex-col items-center justify-between w-full min-h-[40vh] max-h-[80vh] bg-base-200 overflow-hidden"
     >
       <div
         class="flex flex-col mt-16 mb-8 items-center gap-y-1 md:gap-y-1.5 lg:gap-y-2"
