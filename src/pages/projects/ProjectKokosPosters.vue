@@ -35,11 +35,11 @@
           :key="src"
           :src="src"
           :alt="posterAlts[idx]"
-          class="transition-transform cursor-zoom-in hover:scale-105"
+          class="cursor-zoom-in transition-transform duration-500 ease-[cubic-bezier(0.4,0,0.2,1)] hover:scale-105"
           @click="openFull(idx)"
         />
       </div>
-      <transition name="fade">
+      <transition name="fade-zoom">
         <div
           v-if="showFull"
           class="fixed left-0 right-0 bottom-0 z-[99999] flex items-center justify-center bg-black bg-opacity-90"
@@ -49,7 +49,8 @@
           <img
             :src="posterList[fullIndex]"
             :alt="posterAlts[fullIndex]"
-            class="max-h-[80vh] max-w-[90vw] rounded-lg shadow-2xl"
+            class="max-h-[80vh] max-w-[90vw] rounded-lg shadow-2xl transition-transform duration-500 ease-[cubic-bezier(0.4,0,0.2,1)]"
+            :class="showFull ? 'scale-100' : 'scale-95'"
           />
           <button
             @click="closeFull"
@@ -165,3 +166,23 @@ onUnmounted(() => {
   window.removeEventListener("keydown", handleEsc);
 });
 </script>
+
+<style scoped>
+.fade-zoom-enter-active,
+.fade-zoom-leave-active {
+  transition: opacity 0.4s cubic-bezier(0.4, 0, 0.2, 1),
+    transform 0.4s cubic-bezier(0.4, 0, 0.2, 1);
+}
+.fade-zoom-enter-from,
+.fade-zoom-leave-to {
+  opacity: 0;
+}
+.fade-zoom-enter-from img,
+.fade-zoom-leave-to img {
+  transform: scale(0.95);
+}
+.fade-zoom-enter-to img,
+.fade-zoom-leave-from img {
+  transform: scale(1);
+}
+</style>
