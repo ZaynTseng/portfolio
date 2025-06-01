@@ -35,11 +35,13 @@ const router = createRouter({
     { path: "/portfolio/photography", component: Photography },
     { path: "/portfolio/more", component: More },
   ],
-});
-
-router.beforeEach((to, from, next) => {
-  window.scrollTo(0, 0); // This will scroll the page to the top on route change
-  next();
+  scrollBehavior(to, from, savedPosition) {
+    if (savedPosition) {
+      return savedPosition;
+    } else {
+      return { top: 0 };
+    }
+  },
 });
 
 export default router;
