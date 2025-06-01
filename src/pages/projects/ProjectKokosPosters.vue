@@ -12,7 +12,7 @@
           @load="resourceLoaded"
         />
       </figure>
-      <h1 class="pt-4 text-5xl font-bold">Posters made at KOKOS</h1>
+      <h1 class="pt-4 text-5xl font-bold">KOKOS Posters</h1>
       <p class="text-2xl">
         A collection of creative posters designed for KOKOS
       </p>

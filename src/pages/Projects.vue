@@ -8,7 +8,7 @@
         class="flex flex-col mt-16 mb-8 items-center gap-y-1 md:gap-y-1.5 lg:gap-y-2"
       >
         <h1 class="text-4xl font-medium md:text-5xl lg:text-6xl">
-          Posters made at KOKOS
+          KOKOS Posters
         </h1>
         <p class="text-xl font-light text-center md:text-2xl lg:text-3xl">
           A collection of creative posters designed for KOKOS
