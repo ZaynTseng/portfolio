@@ -17,8 +17,8 @@
         A collection of creative posters designed for KOKOS
       </p>
       <div class="flex flex-wrap gap-2 pb-6">
-        <span class="badge badge-secondary badge-info">Graphic Design</span>
-        <span class="badge badge-accent">Poster</span>
+        <span class="badge badge-info">Graphic Design</span>
+        <span class="badge badge-neutral">Poster</span>
         <span class="badge badge-ghost">2024</span>
       </div>
       <h2 class="pt-4 text-3xl font-bold">Project Overview</h2>
