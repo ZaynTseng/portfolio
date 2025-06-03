@@ -2,7 +2,9 @@
   <main class="px-4 py-16 sm:px-6 lg:px-8 sm:py-32">
     <div class="mx-auto max-w-7xl">
       <div class="mb-16 sm:mb-24">
-        <div class="relative text-5xl sm:text-6xl md:text-7xl lg:text-8xl">
+        <div
+          class="relative text-5xl font-medium sm:text-6xl md:text-7xl lg:text-8xl"
+        >
           <h1>
             Ray Zeng
             <transition name="role-fade-up" mode="out-in">
