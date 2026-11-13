@@ -11,6 +11,7 @@ import ProjectPlantMate from "@/pages/projects/ProjectPlantMate.vue";
 import ProjectRecipeScale from "@/pages/projects/ProjectRecipeScale.vue";
 import ProjectStereoDisparity from "@/pages/projects/ProjectStereoDisparity.vue";
 import ProjectKokosPosters from "@/pages/projects/ProjectKokosPosters.vue";
+import ProjectPcrFormatter from "@/pages/projects/ProjectPcrFormatter.vue";
 
 const router = createRouter({
   history: createWebHashHistory(),
@@ -20,6 +21,10 @@ const router = createRouter({
     { path: "/", component: LandingPage },
     { path: "/:notFound(.*)", component: NotFound },
     { path: "/portfolio/projects", component: Projects },
+    {
+      path: "/portfolio/projects/pcr-formatter",
+      component: ProjectPcrFormatter,
+    },
     { path: "/portfolio/projects/plant-mate", component: ProjectPlantMate },
     { path: "/portfolio/projects/recipe-scale", component: ProjectRecipeScale },
     {

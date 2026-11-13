@@ -1,6 +1,33 @@
 <template>
   <div class="flex flex-col gap-3">
     <router-link
+      to="/portfolio/projects/pcr-formatter"
+      class="flex flex-col items-center justify-between w-full min-h-[40vh] max-h-[80vh] bg-base-200 overflow-hidden"
+    >
+      <div
+        class="flex flex-col mt-16 mb-8 items-center gap-y-1 md:gap-y-1.5 lg:gap-y-2"
+      >
+        <h1 class="text-4xl font-medium text-center md:text-5xl lg:text-6xl">
+          Meta Ads PCR Formatter
+        </h1>
+        <p class="text-xl font-light text-center md:text-2xl lg:text-3xl">
+          A Meta Ads export to finished report tables in under two&nbsp;minutes
+        </p>
+        <div class="flex gap-1 text-blue-500 text-md md:text-lg lg:text-xl">
+          <p class="link link-hover">Read</p>
+          <p>→</p>
+        </div>
+      </div>
+      <base-spinner v-if="isLoading"></base-spinner>
+      <img
+        class="w-5/6"
+        src="../assets/projects/pcr-formatter/pcr-formatter-cover-2.png"
+        alt="Meta Ads PCR Formatter"
+        @load="resourceLoaded"
+      />
+    </router-link>
+
+    <router-link
       to="/portfolio/projects/kokos-posters"
       class="flex flex-col items-center justify-between w-full min-h-[40vh] max-h-[80vh] bg-base-200 overflow-hidden"
     >
