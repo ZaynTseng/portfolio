@@ -19,6 +19,6 @@ const router = useRouter();
 const title = "Sorry, this page doesn't exist";
 
 function backToLandingPage() {
-  router.replace("/portfolio/");
+  router.replace("/");
 }
 </script>

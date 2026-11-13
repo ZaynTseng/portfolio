@@ -24,15 +24,13 @@
                 role.rest
               }}</span
             >
-            <transition name="role" appear>
-              <span :key="currentRole.text" class="role">
-                <span class="role-inner"
-                  >{{ currentRole.first
-                  }}<br v-if="currentRole.rest" class="role-break" />{{
-                    currentRole.rest
-                  }}</span
-                >
-              </span>
+            <transition name="role" mode="out-in">
+              <span :key="currentRole.text" class="role"
+                >{{ currentRole.first
+                }}<br v-if="currentRole.rest" class="role-break" />{{
+                  currentRole.rest
+                }}</span
+              >
             </transition>
           </p>
           <h2 class="font-light text-gray-400">Melbourne, AU</h2>
@@ -50,7 +48,7 @@
         <div
           class="flex items-center gap-1 text-2xl text-blue-500 sm:text-3xl md:text-4xl lg:text-5xl"
         >
-          <router-link to="/portfolio/projects" class="link link-hover"
+          <router-link to="/projects" class="link link-hover"
             >My Projects</router-link
           >
           <span>→</span>
@@ -119,8 +117,6 @@ onUnmounted(() => {
 </script>
 
 <style scoped>
-/* ---- Layout ---- */
-
 .hero-title {
   container-type: inline-size;
 }
@@ -135,13 +131,6 @@ onUnmounted(() => {
 .role-stage {
   display: grid;
   cursor: pointer;
-  /* The stage is a mask: a role rises into view from below its bottom edge.
-     The padding leaves room for the spring overshoot at the top and for
-     descenders at the bottom; the negative margin stops that padding
-     moving the lines around it. */
-  overflow: hidden;
-  padding-block: 0.25em 0.12em;
-  margin-block: -0.25em -0.12em;
 }
 
 .role-sizer,
@@ -153,13 +142,6 @@ onUnmounted(() => {
   visibility: hidden;
 }
 
-/* .role stretches to the full stage height, so moving it by 100% always
-   takes it out of view, whether the stage is one line tall or two. */
-.role,
-.role-inner {
-  display: block;
-}
-
 /* Roles sit on one line when there is room for the widest of them, and
    break after the first word when there is not. The widest role is about
    10em wide; raise this number if you add a longer one. */
@@ -169,97 +151,17 @@ onUnmounted(() => {
   }
 }
 
-/* ---- Motion ---- */
-
-/* Two layers. The outer one carries the text up through the mask; the inner
-   one adds the spring, measured in em so the bounce is the same size
-   however tall the stage is. Both wait a moment so the outgoing role has
-   started to clear. */
+/* The old role fades out, then the new one fades in. */
 .role-enter-active {
-  animation: role-in 0.5s cubic-bezier(0.16, 1, 0.3, 1) 0.1s both;
-}
-
-.role-inner {
-  animation: role-spring 1s cubic-bezier(0.34, 1.56, 0.64, 1) 0.1s both;
-}
-
-/* A damped spring (about 23% overshoot), for browsers that support linear(). */
-@supports (animation-timing-function: linear(0, 1)) {
-  .role-inner {
-    animation-timing-function: linear(
-      0,
-      0.012 1.2%,
-      0.075 3.1%,
-      0.202 5.4%,
-      0.385 8%,
-      0.602 10.8%,
-      0.821 13.8%,
-      1.011 17%,
-      1.148 20.4%,
-      1.22 23.9%,
-      1.234 26.2%,
-      1.193 31.3%,
-      1.128 35.2%,
-      1.057 39.2%,
-      0.997 43.4%,
-      0.96 47.6%,
-      0.945 52.8%,
-      0.951 56.4%,
-      0.967 60.9%,
-      0.986 65.5%,
-      1.002 70.2%,
-      1.011 75%,
-      1.013 79.8%,
-      1.01 84.8%,
-      1.005 89.8%,
-      1.001 94.8%,
-      1
-    );
-  }
+  transition: opacity 0.4s ease;
 }
 
 .role-leave-active {
-  transition: transform 0.3s cubic-bezier(0.5, 0, 0.75, 0),
-    opacity 0.18s ease-in;
+  transition: opacity 0.25s ease;
 }
 
+.role-enter-from,
 .role-leave-to {
   opacity: 0;
-  transform: translateY(-55%);
-}
-
-@keyframes role-in {
-  from {
-    transform: translateY(calc(100% + 0.12em));
-  }
-}
-
-@keyframes role-spring {
-  from {
-    transform: translateY(0.8em);
-  }
-}
-
-@media (prefers-reduced-motion: reduce) {
-  .role-enter-active,
-  .role-inner {
-    animation: none;
-  }
-
-  .role-enter-active {
-    transition: opacity 0.3s ease;
-  }
-
-  .role-enter-from {
-    opacity: 0;
-  }
-
-  .role-leave-active {
-    transition: opacity 0.2s ease;
-  }
-
-  .role-leave-to {
-    transform: none;
-  }
 }
 </style>

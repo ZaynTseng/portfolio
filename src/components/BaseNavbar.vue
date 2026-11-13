@@ -25,7 +25,7 @@
         </label>
       </div>
       <div class="flex-1 px-2 mx-2">
-        <router-link class="text-xl normal-case btn btn-ghost" to="/portfolio/"
+        <router-link class="text-xl normal-case btn btn-ghost" to="/"
           >Ray Zeng</router-link
         >
       </div>
@@ -54,8 +54,8 @@ const route = useRoute();
 const currentRoute = computed(() => route.path);
 
 const menuItems = [
-  { name: "Projects", path: "/portfolio/projects" },
-  { name: "About Me", path: "/portfolio/about" },
-  { name: "Contact", path: "/portfolio/contact" },
+  { name: "Projects", path: "/projects" },
+  { name: "About Me", path: "/about" },
+  { name: "Contact", path: "/contact" },
 ];
 </script>

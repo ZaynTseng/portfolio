@@ -11,16 +11,16 @@
       </li>
       <li></li>
       <li>
-        <router-link to="/portfolio/" @click="itemClicked">Home</router-link>
+        <router-link to="/" @click="itemClicked">Home</router-link>
       </li>
       <li>
-        <router-link to="/portfolio/projects" @click="itemClicked">Projects</router-link>
+        <router-link to="/projects" @click="itemClicked">Projects</router-link>
       </li>
       <li>
-        <router-link to="/portfolio/about" @click="itemClicked">About Me</router-link>
+        <router-link to="/about" @click="itemClicked">About Me</router-link>
       </li>
       <li>
-        <router-link to="/portfolio/contact" @click="itemClicked">Contact</router-link>
+        <router-link to="/contact" @click="itemClicked">Contact</router-link>
       </li>
     </ul>
   </div>

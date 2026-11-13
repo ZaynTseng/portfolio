@@ -40,7 +40,7 @@
           </p>
           <div class="flex items-center gap-1 text-blue-500">
             <router-link
-              to="/portfolio/projects/pcr-formatter"
+              to="/projects/pcr-formatter"
               class="link link-hover"
               >Read the case study</router-link
             >
@@ -103,7 +103,7 @@
       <div
         class="flex items-center gap-1 mt-16 text-2xl text-blue-500 sm:text-3xl md:text-4xl sm:mt-24"
       >
-        <router-link to="/portfolio/contact" class="link link-hover"
+        <router-link to="/contact" class="link link-hover"
           >Get in touch</router-link
         >
         <span>→</span>

@@ -16,29 +16,24 @@ import ProjectPcrFormatter from "@/pages/projects/ProjectPcrFormatter.vue";
 const router = createRouter({
   history: createWebHashHistory(),
   routes: [
-    { path: "/portfolio/", component: LandingPage },
-    { path: "/portfolio", component: LandingPage },
     { path: "/", component: LandingPage },
+    { path: "/projects", component: Projects },
+    { path: "/projects/pcr-formatter", component: ProjectPcrFormatter },
+    { path: "/projects/plant-mate", component: ProjectPlantMate },
+    { path: "/projects/recipe-scale", component: ProjectRecipeScale },
+    { path: "/projects/stereo-disparity", component: ProjectStereoDisparity },
+    { path: "/projects/kokos-posters", component: ProjectKokosPosters },
+    { path: "/about", component: AboutMe },
+    { path: "/contact", component: Contact },
+    { path: "/photography", component: Photography },
+    { path: "/more", component: More },
+    // Addresses used to start with /portfolio. Send those to the new ones,
+    // so links shared before the change keep working.
+    {
+      path: "/portfolio/:rest(.*)*",
+      redirect: (to) => "/" + [].concat(to.params.rest || []).join("/"),
+    },
     { path: "/:notFound(.*)", component: NotFound },
-    { path: "/portfolio/projects", component: Projects },
-    {
-      path: "/portfolio/projects/pcr-formatter",
-      component: ProjectPcrFormatter,
-    },
-    { path: "/portfolio/projects/plant-mate", component: ProjectPlantMate },
-    { path: "/portfolio/projects/recipe-scale", component: ProjectRecipeScale },
-    {
-      path: "/portfolio/projects/stereo-disparity",
-      component: ProjectStereoDisparity,
-    },
-    {
-      path: "/portfolio/projects/kokos-posters",
-      component: ProjectKokosPosters,
-    },
-    { path: "/portfolio/about", component: AboutMe },
-    { path: "/portfolio/contact", component: Contact },
-    { path: "/portfolio/photography", component: Photography },
-    { path: "/portfolio/more", component: More },
   ],
   scrollBehavior(to, from, savedPosition) {
     if (savedPosition) {

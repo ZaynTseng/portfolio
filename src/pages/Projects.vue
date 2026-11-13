@@ -1,7 +1,7 @@
 <template>
   <div class="flex flex-col gap-3">
     <router-link
-      to="/portfolio/projects/pcr-formatter"
+      to="/projects/pcr-formatter"
       class="flex flex-col items-center justify-between w-full min-h-[40vh] max-h-[80vh] bg-base-200 overflow-hidden"
     >
       <div
@@ -21,16 +21,16 @@
       <base-spinner v-if="isLoading"></base-spinner>
       <img
         class="w-5/6"
-        src="../assets/projects/pcr-formatter/pcr-formatter-cover-2.webp"
-        width="2340"
-        height="1290"
+        src="../assets/projects/pcr-formatter/pcr-formatter-cover-2.png"
+        width="3120"
+        height="1720"
         alt="Meta Ads PCR Formatter"
         @load="resourceLoaded"
       />
     </router-link>
 
     <router-link
-      to="/portfolio/projects/kokos-posters"
+      to="/projects/kokos-posters"
       class="flex flex-col items-center justify-between w-full min-h-[40vh] max-h-[80vh] bg-base-200 overflow-hidden"
     >
       <div
@@ -50,9 +50,9 @@
       <base-spinner v-if="isLoading"></base-spinner>
       <img
         class="w-5/6"
-        src="../assets/projects/kokos/cover-1.webp"
-        width="2400"
-        height="1350"
+        src="../assets/projects/kokos/cover-1.png"
+        width="2880"
+        height="1620"
         loading="lazy"
         alt="Posters made at KOKOS"
         @load="resourceLoaded"
@@ -60,7 +60,7 @@
     </router-link>
 
     <router-link
-      to="/portfolio/projects/plant-mate"
+      to="/projects/plant-mate"
       class="flex flex-col items-center justify-between w-full min-h-[40vh] max-h-[80vh] bg-base-200 overflow-hidden"
     >
       <div
@@ -78,9 +78,9 @@
       <base-spinner v-if="isLoading"></base-spinner>
       <img
         class="w-11/12"
-        src="../assets/projects/plant-mate/plant-mate-cover-2.webp"
-        width="2400"
-        height="1350"
+        src="../assets/projects/plant-mate/plant-mate-cover-2.png"
+        width="3400"
+        height="1912"
         loading="lazy"
         alt="Plant Mate"
         @load="resourceLoaded"
@@ -88,7 +88,7 @@
     </router-link>
 
     <router-link
-      to="/portfolio/projects/recipe-scale"
+      to="/projects/recipe-scale"
       class="flex items-center justify-between w-full min-h-[40vh] max-h-[80vh] bg-base-200 overflow-hidden"
     >
       <div
@@ -108,7 +108,7 @@
       <base-spinner v-if="isLoading"></base-spinner>
       <img
         class="w-1/2"
-        src="../assets/projects/recipe-scale/recipe-scale-cover-2.webp"
+        src="../assets/projects/recipe-scale/recipe-scale-cover-2.png"
         width="1000"
         height="1500"
         loading="lazy"
@@ -118,7 +118,7 @@
     </router-link>
 
     <router-link
-      to="/portfolio/projects/stereo-disparity"
+      to="/projects/stereo-disparity"
       class="flex flex-col items-center justify-between w-full min-h-[40vh] max-h-[80vh] bg-base-200 overflow-hidden"
     >
       <div
@@ -138,7 +138,7 @@
       <base-spinner v-if="isLoading"></base-spinner>
       <img
         class="w-5/6"
-        src="../assets/projects/stereo-disparity/stereo-disparity-cover-2.webp"
+        src="../assets/projects/stereo-disparity/stereo-disparity-cover-2.png"
         width="2272"
         height="1760"
         loading="lazy"
