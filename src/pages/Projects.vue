@@ -21,7 +21,9 @@
       <base-spinner v-if="isLoading"></base-spinner>
       <img
         class="w-5/6"
-        src="../assets/projects/pcr-formatter/pcr-formatter-cover-2.png"
+        src="../assets/projects/pcr-formatter/pcr-formatter-cover-2.webp"
+        width="2340"
+        height="1290"
         alt="Meta Ads PCR Formatter"
         @load="resourceLoaded"
       />
@@ -48,7 +50,10 @@
       <base-spinner v-if="isLoading"></base-spinner>
       <img
         class="w-5/6"
-        src="../assets/projects/kokos/cover-1.png"
+        src="../assets/projects/kokos/cover-1.webp"
+        width="2400"
+        height="1350"
+        loading="lazy"
         alt="Posters made at KOKOS"
         @load="resourceLoaded"
       />
@@ -73,7 +78,10 @@
       <base-spinner v-if="isLoading"></base-spinner>
       <img
         class="w-11/12"
-        src="../assets/projects/plant-mate/plant-mate-cover-2.png"
+        src="../assets/projects/plant-mate/plant-mate-cover-2.webp"
+        width="2400"
+        height="1350"
+        loading="lazy"
         alt="Plant Mate"
         @load="resourceLoaded"
       />
@@ -100,7 +108,10 @@
       <base-spinner v-if="isLoading"></base-spinner>
       <img
         class="w-1/2"
-        src="../assets/projects/recipe-scale/recipe-scale-cover-2.png"
+        src="../assets/projects/recipe-scale/recipe-scale-cover-2.webp"
+        width="1000"
+        height="1500"
+        loading="lazy"
         alt="RecipeScale"
         @load="resourceLoaded"
       />
@@ -127,7 +138,10 @@
       <base-spinner v-if="isLoading"></base-spinner>
       <img
         class="w-5/6"
-        src="../assets/projects/stereo-disparity/stereo-disparity-cover-2.png"
+        src="../assets/projects/stereo-disparity/stereo-disparity-cover-2.webp"
+        width="2272"
+        height="1760"
+        loading="lazy"
         alt="Stereo Disparity"
         @load="resourceLoaded"
       />

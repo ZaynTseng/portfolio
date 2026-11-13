@@ -6,7 +6,9 @@
     <div class="grid max-w-3xl gap-2">
       <figure>
         <img
-          src="../../assets/projects/pcr-formatter/pcr-formatter-cover.png"
+          src="../../assets/projects/pcr-formatter/pcr-formatter-cover.webp"
+          width="1600"
+          height="900"
           alt="Meta Ads PCR Formatter showing formatted report tables"
           class="border border-base-content bg-base-300 rounded-box border-opacity-5"
           @load="resourceLoaded"
@@ -64,7 +66,10 @@
         full naming convention, and none of the numbers are formatted.
       </p>
       <img
-        src="../../assets/projects/pcr-formatter/pcr-formatter-raw-export.png"
+        src="../../assets/projects/pcr-formatter/pcr-formatter-raw-export.webp"
+        width="1600"
+        height="665"
+        loading="lazy"
         alt="A raw Meta Ads export opened as a spreadsheet"
         class="border border-base-content rounded-box border-opacity-5"
       />
@@ -102,7 +107,10 @@
         campaign, results by audience, and results by creative.
       </p>
       <img
-        src="../../assets/projects/pcr-formatter/pcr-formatter-ad-level.png"
+        src="../../assets/projects/pcr-formatter/pcr-formatter-ad-level.webp"
+        width="1600"
+        height="861"
+        loading="lazy"
         alt="The formatted ad level table produced by the tool"
         class="border border-base-content rounded-box border-opacity-5"
       />

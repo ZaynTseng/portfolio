@@ -6,19 +6,13 @@
         <router-link to="/portfolio/projects" class="link link-hover"
           >Projects</router-link
         >
+      </nav>
+      <nav>
         <router-link to="/portfolio/about" class="link link-hover"
           >About Me</router-link
         >
-      </nav>
-      <nav>
         <router-link to="/portfolio/contact" class="link link-hover"
           >Contact</router-link
-        >
-        <router-link to="/portfolio/photography" class="link link-hover"
-          >Photography</router-link
-        >
-        <router-link to="/portfolio/more" class="link link-hover"
-          >More</router-link
         >
       </nav>
       <nav>
@@ -55,9 +49,11 @@
       class="max-w-5xl px-10 py-4 mx-auto border-t border-gray-800 footer"
     >
       <aside>
-        <p>© 2025 Ray Zeng. All Rights Reserved.</p>
+        <p>© {{ year }} Ray Zeng. All Rights Reserved.</p>
       </aside>
     </footer>
   </div>
 </template>
-<script setup></script>
+<script setup>
+const year = new Date().getFullYear();
+</script>

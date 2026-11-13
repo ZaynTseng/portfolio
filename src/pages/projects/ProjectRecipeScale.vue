@@ -5,7 +5,7 @@
   <base-hero class="animate__animated animate__fadeIn">
     <div class="max-w-3xl gap-2 grid">
       <figure>
-        <img src="../../assets/projects/recipe-scale/recipe-scale-cover.png" alt="cover"
+        <img src="../../assets/projects/recipe-scale/recipe-scale-cover.webp" width="1600" height="900" alt="cover"
              class="border-base-content bg-base-300 rounded-box border border-opacity-5"
              @load="resourceLoaded">
       </figure>
@@ -32,7 +32,7 @@
         In this way, all cooking knowledge could travel through time and space and never perish.
       </p>
       <h2 class="text-3xl font-bold pt-4">Background Research</h2>
-      <img src="../../assets/projects/recipe-scale/background.png" alt="background">
+      <img src="../../assets/projects/recipe-scale/background.webp" width="1600" height="988" loading="lazy" alt="background">
 
       <h2 class="text-3xl font-bold pt-4">Statement of Design Challenge</h2>
       <h3 class="text-2xl font-light">What if we design a kitchen appliance with digitised cooking knowledge so that
@@ -40,36 +40,36 @@
 
       <h2 class="text-3xl font-bold pt-4">Ideation</h2>
       <h3 class="text-2xl font-bold pt-4">Thumbnails</h3>
-      <img src="../../assets/projects/recipe-scale/ideation.png" alt="ideation">
+      <img src="../../assets/projects/recipe-scale/ideation.webp" width="1545" height="591" loading="lazy" alt="ideation">
 
       <h3 class="text-2xl font-bold pt-4">Medium Fidelity</h3>
       <div class="grid grid-cols-1 md:grid-cols-2">
-        <img src="../../assets/projects/recipe-scale/medium-fidelity-1.png" alt="medium-fidelity-1">
-        <img src="../../assets/projects/recipe-scale/medium-fidelity-2.png" alt="medium-fidelity-2">
-        <img src="../../assets/projects/recipe-scale/medium-fidelity-3.png" alt="medium-fidelity-3">
-        <img src="../../assets/projects/recipe-scale/medium-fidelity-4.png" alt="medium-fidelity-4">
-        <img src="../../assets/projects/recipe-scale/medium-fidelity-5.png" alt="medium-fidelity-5">
-        <img src="../../assets/projects/recipe-scale/medium-fidelity-6.png" alt="medium-fidelity-6">
+        <img src="../../assets/projects/recipe-scale/medium-fidelity-1.webp" width="1545" height="1080" loading="lazy" alt="medium-fidelity-1">
+        <img src="../../assets/projects/recipe-scale/medium-fidelity-2.webp" width="1545" height="1080" loading="lazy" alt="medium-fidelity-2">
+        <img src="../../assets/projects/recipe-scale/medium-fidelity-3.webp" width="1545" height="1080" loading="lazy" alt="medium-fidelity-3">
+        <img src="../../assets/projects/recipe-scale/medium-fidelity-4.webp" width="1545" height="1080" loading="lazy" alt="medium-fidelity-4">
+        <img src="../../assets/projects/recipe-scale/medium-fidelity-5.webp" width="1545" height="1080" loading="lazy" alt="medium-fidelity-5">
+        <img src="../../assets/projects/recipe-scale/medium-fidelity-6.webp" width="1545" height="1080" loading="lazy" alt="medium-fidelity-6">
       </div>
 
-      <img src="../../assets/projects/recipe-scale/medium-fidelity-functions.png" alt="medium-fidelity-functions">
+      <img src="../../assets/projects/recipe-scale/medium-fidelity-functions.webp" width="1902" height="1054" loading="lazy" alt="medium-fidelity-functions">
 
       <h3 class="text-2xl font-bold pt-4">Product Design Stages</h3>
       <div class="grid grid-cols-1 md:grid-cols-2">
-        <img src="../../assets/projects/recipe-scale/stage-1.png" alt="product-design-stages-1">
-        <img src="../../assets/projects/recipe-scale/stage-2.png" alt="product-design-stages-2">
-        <img src="../../assets/projects/recipe-scale/stage-3.png" alt="product-design-stages-3">
-        <img src="../../assets/projects/recipe-scale/stage-4.png" alt="product-design-stages-4">
+        <img src="../../assets/projects/recipe-scale/stage-1.webp" width="1600" height="900" loading="lazy" alt="product-design-stages-1">
+        <img src="../../assets/projects/recipe-scale/stage-2.webp" width="1600" height="900" loading="lazy" alt="product-design-stages-2">
+        <img src="../../assets/projects/recipe-scale/stage-3.webp" width="1600" height="900" loading="lazy" alt="product-design-stages-3">
+        <img src="../../assets/projects/recipe-scale/stage-4.webp" width="1600" height="900" loading="lazy" alt="product-design-stages-4">
       </div>
 
       <h3 class="text-2xl font-bold pt-4">Circuit Design</h3>
-      <img src="../../assets/projects/recipe-scale/circuit.png" alt="circuit-design">
+      <img src="../../assets/projects/recipe-scale/circuit.webp" width="1600" height="977" loading="lazy" alt="circuit-design">
 
       <h3 class="text-2xl font-bold pt-4">Hi-fidelity Mockup</h3>
-      <img src="../../assets/projects/recipe-scale/hi-fidelity.png" alt="hi-fidelity">
+      <img src="../../assets/projects/recipe-scale/hi-fidelity.webp" width="1600" height="609" loading="lazy" alt="hi-fidelity">
 
       <h2 class="text-3xl font-bold pt-4">Storyboards</h2>
-      <img src="../../assets/projects/recipe-scale/storyboards.png" alt="storyboards">
+      <img src="../../assets/projects/recipe-scale/storyboards.webp" width="1200" height="2217" loading="lazy" alt="storyboards">
 
       <h2 class="text-3xl font-bold pt-4">Project Reflection</h2>
       <p>Through this project, we are deeply aware of the importance of teamwork division and cooperation. There is also

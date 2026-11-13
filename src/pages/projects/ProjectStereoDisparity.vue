@@ -5,7 +5,7 @@
   <base-hero class="animate__animated animate__fadeIn">
     <div class="max-w-3xl gap-2 grid">
       <figure>
-        <img src="../../assets/projects/stereo-disparity/stereo-disparity-cover.png" alt="Stereo Disparity"
+        <img src="../../assets/projects/stereo-disparity/stereo-disparity-cover.webp" width="1600" height="900" alt="Stereo Disparity"
              class="border-base-content bg-base-300 rounded-box border border-opacity-5"
              @load="resourceLoaded">
       </figure>
@@ -383,9 +383,9 @@
       </div>
       <p>Here are the disparity maps we got from different methods and the ground truth depth image given in the
         dataset:</p>
-      <img src="../../assets/projects/stereo-disparity/comparison-of-fixed-window.png" alt="comparison-of-fixed-window">
+      <img src="../../assets/projects/stereo-disparity/comparison-of-fixed-window.webp" width="1296" height="657" loading="lazy" alt="comparison-of-fixed-window">
       <span>Fig. 1.	Comparison of fixed window</span>
-      <img src="../../assets/projects/stereo-disparity/comparison-of-dynamic-window.png"
+      <img src="../../assets/projects/stereo-disparity/comparison-of-dynamic-window.webp" width="1296" height="657" loading="lazy"
            alt="comparison-of-dynamic-window">
       <span>Fig. 2.	Comparison of dynamic window</span>
       <p>The method of dynamic window size performs better, which corroborates our thoughts, while the drawback of this

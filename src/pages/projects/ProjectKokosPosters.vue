@@ -6,7 +6,9 @@
     <div class="grid max-w-3xl gap-2">
       <figure>
         <img
-          src="../../assets/projects/kokos/cover-2.png"
+          src="../../assets/projects/kokos/cover-2.webp"
+          width="1600"
+          height="900"
           alt="Posters made at KOKOS"
           class="border border-base-content bg-base-300 rounded-box border-opacity-5"
           @load="resourceLoaded"
@@ -35,6 +37,9 @@
           :key="src"
           :src="src"
           :alt="posterAlts[idx]"
+          width="1500"
+          height="2000"
+          loading="lazy"
           :class="[
             'cursor-zoom-in transition-transform duration-500 ease-[cubic-bezier(0.4,0,0.2,1)]',
             !isTouchDevice && !(showFull && hiddenIndex === idx)
@@ -97,37 +102,37 @@ function resourceLoaded() {
 }
 
 const posterList = [
-  new URL("../../assets/projects/kokos/10.14-why-aus.png", import.meta.url)
+  new URL("../../assets/projects/kokos/10.14-why-aus.webp", import.meta.url)
     .href,
-  new URL("../../assets/projects/kokos/10.15-anu.png", import.meta.url).href,
+  new URL("../../assets/projects/kokos/10.15-anu.webp", import.meta.url).href,
   new URL(
-    "../../assets/projects/kokos/10.16-usyd-jacaranda.png",
+    "../../assets/projects/kokos/10.16-usyd-jacaranda.webp",
     import.meta.url
   ).href,
   new URL(
-    "../../assets/projects/kokos/10.17-events-in-melb.png",
+    "../../assets/projects/kokos/10.17-events-in-melb.webp",
     import.meta.url
   ).href,
-  new URL("../../assets/projects/kokos/10.2-whv.png", import.meta.url).href,
+  new URL("../../assets/projects/kokos/10.2-whv.webp", import.meta.url).href,
   new URL(
-    "../../assets/projects/kokos/10.25-study-in-au-series.png",
-    import.meta.url
-  ).href,
-  new URL(
-    "../../assets/projects/kokos/10.3-unimelb-master-of-data-science.png",
+    "../../assets/projects/kokos/10.25-study-in-au-series.webp",
     import.meta.url
   ).href,
   new URL(
-    "../../assets/projects/kokos/10.4-canberra-nursing.png",
+    "../../assets/projects/kokos/10.3-unimelb-master-of-data-science.webp",
     import.meta.url
   ).href,
-  new URL("../../assets/projects/kokos/10.7-service-intro.png", import.meta.url)
+  new URL(
+    "../../assets/projects/kokos/10.4-canberra-nursing.webp",
+    import.meta.url
+  ).href,
+  new URL("../../assets/projects/kokos/10.7-service-intro.webp", import.meta.url)
     .href,
-  new URL("../../assets/projects/kokos/11.06-vu.png", import.meta.url).href,
-  new URL("../../assets/projects/kokos/8.28-rmit-tour.png", import.meta.url)
+  new URL("../../assets/projects/kokos/11.06-vu.webp", import.meta.url).href,
+  new URL("../../assets/projects/kokos/8.28-rmit-tour.webp", import.meta.url)
     .href,
   new URL(
-    "../../assets/projects/kokos/9.18-free-application.png",
+    "../../assets/projects/kokos/9.18-free-application.webp",
     import.meta.url
   ).href,
 ];

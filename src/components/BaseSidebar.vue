@@ -22,12 +22,6 @@
       <li>
         <router-link to="/portfolio/contact" @click="itemClicked">Contact</router-link>
       </li>
-      <li>
-        <router-link to="/portfolio/photography" @click="itemClicked">Photography</router-link>
-      </li>
-      <li>
-        <router-link to="/portfolio/more" @click="itemClicked">More</router-link>
-      </li>
     </ul>
   </div>
 </template>

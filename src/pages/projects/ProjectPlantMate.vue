@@ -5,7 +5,7 @@
   <base-hero class="animate__animated animate__fadeIn">
     <div class="max-w-3xl gap-2 grid">
       <figure>
-        <img src="../../assets/projects/plant-mate/plant-mate-cover.png" alt="cover"
+        <img src="../../assets/projects/plant-mate/plant-mate-cover.webp" width="1600" height="900" alt="cover"
              class="border-base-content bg-base-300 rounded-box border border-opacity-5"
              @load="resourceLoaded">
       </figure>
@@ -63,7 +63,7 @@
         </li>
         <li>Cannot detect sunlight, shade, pest, or plant density, and monitor a plant’s growth and yields.</li>
       </ul>
-      <img src="../../assets/projects/plant-mate/current-product.png" alt="current-product">
+      <img src="../../assets/projects/plant-mate/current-product.webp" width="1600" height="813" loading="lazy" alt="current-product">
 
       <h3 class="text-2xl font-bold pt-4">Primary Research</h3>
       <p>Two data collection methods were used for primary research: semi-structured interviews and netnography.
@@ -89,7 +89,7 @@
         and lack of farming knowledge. These failures contribute to people giving up growing plants themselves and did
         not have a pleasant experience.
       </p>
-      <img src="../../assets/projects/plant-mate/affinity.png" alt="affinity diagram">
+      <img src="../../assets/projects/plant-mate/affinity.webp" width="1600" height="1520" loading="lazy" alt="affinity diagram">
 
       <h2 class="text-3xl font-bold pt-4">Insights</h2>
 
@@ -134,13 +134,13 @@
       </ul>
 
       <h2 class="text-3xl font-bold pt-4">Problem Statement</h2>
-      <img src="../../assets/projects/plant-mate/statement.png" alt="problem statement">
+      <img src="../../assets/projects/plant-mate/statement.webp" width="1600" height="900" loading="lazy" alt="problem statement">
 
       <h2 class="text-3xl font-bold pt-4">Mood Board</h2>
-      <img src="../../assets/projects/plant-mate/moodboard.jpg" alt="moodboard">
+      <img src="../../assets/projects/plant-mate/moodboard.webp" width="1600" height="1028" loading="lazy" alt="moodboard">
 
       <h2 class="text-3xl font-bold pt-4">Wireframe</h2>
-      <img src="../../assets/projects/plant-mate/wireframe.png" alt="wireframe">
+      <img src="../../assets/projects/plant-mate/wireframe.webp" width="1600" height="523" loading="lazy" alt="wireframe">
 
       <h3 class="text-2xl font-bold pt-4">Ideation</h3>
       <p>
@@ -166,7 +166,7 @@
       <h2 class="text-3xl font-bold pt-4">High-fidelity Prototype</h2>
 
       <h3 class="text-2xl font-bold pt-4">Onboarding – Everything Starts Here</h3>
-      <img src="../../assets/projects/plant-mate/prototype-1.png" alt="prototype">
+      <img src="../../assets/projects/plant-mate/prototype-1.webp" width="1600" height="1048" loading="lazy" alt="prototype">
       <ul class="gap-2 grid list-disc ml-6">
         <li>Introduction of main features first time starting the app.</li>
         <li>Smart camera will be added at the set up time.</li>
@@ -176,7 +176,7 @@
         app uses machine learning to power its analysis.</p>
 
       <h3 class="text-2xl font-bold pt-4">My Plants – All Necessary Information in One Place</h3>
-      <img src="../../assets/projects/plant-mate/prototype-2.png" alt="prototype">
+      <img src="../../assets/projects/plant-mate/prototype-2.webp" width="1600" height="1048" loading="lazy" alt="prototype">
       <ul class="gap-2 grid list-disc ml-6">
         <li>Camera view, plant information updates, and collection of plants in one place.</li>
         <li>All information is automatically generated, no need for manual inputs.</li>
@@ -187,7 +187,7 @@
       </ul>
 
       <h3 class="text-2xl font-bold pt-4">Insights – Where the Digital Twin Magic Happens</h3>
-      <img src="../../assets/projects/plant-mate/prototype-3.png" alt="prototype">
+      <img src="../../assets/projects/plant-mate/prototype-3.webp" width="1600" height="1048" loading="lazy" alt="prototype">
       <ul class="gap-2 grid list-disc ml-6">
         <li>Insights in a timeline – historical insights, insights for today, and predicted upcoming insights.</li>
         <li>Insights in 5 categories: water, ripe, fertilise, pest, and tips for growing plants.</li>
@@ -197,7 +197,7 @@
       </ul>
 
       <h3 class="text-2xl font-bold pt-4">Community for Sharing & Settings for Personalisation</h3>
-      <img src="../../assets/projects/plant-mate/prototype-4.png" alt="prototype">
+      <img src="../../assets/projects/plant-mate/prototype-4.webp" width="1600" height="1048" loading="lazy" alt="prototype">
       <ul class="gap-2 grid list-disc ml-6">
         <li>There is a plant lover community for sharing experiences and getting feedbacks.</li>
         <li>Write you newest findings!</li>
@@ -210,7 +210,7 @@
         <li>Theme colour: green (#34C759)</li>
         <li>Font: SF Pro</li>
       </ul>
-      <img src="../../assets/projects/plant-mate/colour.png" alt="colour palette">
+      <img src="../../assets/projects/plant-mate/colour.webp" width="1600" height="330" loading="lazy" alt="colour palette">
 
       <a class="link link-hover text-blue-500" target="_blank"
          href="https://developer.apple.com/design/human-interface-guidelines/foundations/color/">Human Interface
@@ -239,7 +239,7 @@
       </ul>
 
       <h3 class="text-2xl font-bold pt-4">Updates in My Plants Page</h3>
-      <img src="../../assets/projects/plant-mate/compare-1.png" alt="compare">
+      <img src="../../assets/projects/plant-mate/compare-1.webp" width="1600" height="1400" loading="lazy" alt="compare">
       <ul class="gap-2 grid list-disc ml-6">
         <li>The large text top navigation is replaced with regular one, to save space for the main content.</li>
         <li>Plant information updates are moved from the Insights page to the My Plants page, resulting in improved
@@ -249,7 +249,7 @@
       </ul>
 
       <h3 class="text-2xl font-bold pt-4">Updates in Insights Page</h3>
-      <img src="../../assets/projects/plant-mate/compare-2.png" alt="compare">
+      <img src="../../assets/projects/plant-mate/compare-2.webp" width="1600" height="1400" loading="lazy" alt="compare">
       <ul class="gap-2 grid list-disc ml-6">
         <li>The large text top navigation is replaced with regular one, to save space for the main content.</li>
         <li>Plant information updates are moved from the Insights page to the My Plants page, resulting in improved
@@ -265,7 +265,7 @@
       </ul>
 
       <h3 class="text-2xl font-bold pt-4">Updates in Notification Detail Page</h3>
-      <img src="../../assets/projects/plant-mate/compare-3.png" alt="compare">
+      <img src="../../assets/projects/plant-mate/compare-3.webp" width="1600" height="1400" loading="lazy" alt="compare">
       <ul class="gap-2 grid list-disc ml-6">
         <li>Added a dynamic circle to indicate the very specific plant that needs action. The example above is
           pointing
@@ -279,7 +279,7 @@
 
 
       <h3 class="text-2xl font-bold pt-4">New Functionality – Time Lapse Photos</h3>
-      <img src="../../assets/projects/plant-mate/compare-4.png" alt="compare">
+      <img src="../../assets/projects/plant-mate/compare-4.webp" width="1600" height="1400" loading="lazy" alt="compare">
       <ul class="gap-2 grid list-disc ml-6">
         <li>Taking advantage of the camera images, the app can now capture photos of each plant periodically and save
           them

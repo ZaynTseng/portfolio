@@ -57,7 +57,5 @@ const menuItems = [
   { name: "Projects", path: "/portfolio/projects" },
   { name: "About Me", path: "/portfolio/about" },
   { name: "Contact", path: "/portfolio/contact" },
-  { name: "Photography", path: "/portfolio/photography" },
-  { name: "More", path: "/portfolio/more" },
 ];
 </script>
